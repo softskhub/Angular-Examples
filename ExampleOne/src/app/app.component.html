@@ -10,5 +10,23 @@
 
   <h1>This is avialbel in git repository </h1>
   <h2>GitHub name is Softskhub</h2>
+
+  <h1>This Applicantion name is {{title}}</h1>
+  <h1>Function values  is {{getValue()}}</h1>
+  <app-login></app-login>
+
+  <button (click)="getEventFun(123)">Click me</button>
+
+  <input type="text" #box1 (keyup)="getEventFun(box1.value)" placeholder="keyupevent"/>
+  <input type="text" #box2 (keydown)="getEventFun(box2.value)" placeholder="keyupevent"/>
+  <input type="text" #box3 (input)="getEventFun(box3.value)" placeholder="input"/>
+
+  <h4 #box4 (mouseover)="getEventFun('over')">mouseover</h4>
+  <h4 #box4 (mouseleave)="getEventFun('leave')">mouseleave</h4>
+ 
+
+  
+  
+  
     
 </div>

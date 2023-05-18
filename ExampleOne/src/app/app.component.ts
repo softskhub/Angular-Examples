@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ExampleOne';
+  title = 'Softskhub';
+
+  getValue(){
+    return "GetFunction Values";
+    }
+
+    getEventFun(name:any){
+      console.log('keyup function called'+name);
+    }
+
+    getEventFunKeyDown(name:any){
+      console.log('keydown function called'+name);
+    }
 }
